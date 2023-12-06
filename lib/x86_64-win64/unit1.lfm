@@ -1,0 +1,119 @@
+object Flogin: TFlogin
+  Left = 613
+  Height = 338
+  Top = 165
+  Width = 530
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Koperasi | Top And Top Apparel'
+  ClientHeight = 338
+  ClientWidth = 530
+  Color = clWhite
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object Panel1: TPanel
+    Left = 4
+    Height = 46
+    Top = 20
+    Width = 506
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.Bottom = 10
+    BevelOuter = bvNone
+    Caption = '  Username'
+    ClientHeight = 46
+    ClientWidth = 506
+    ParentBackground = False
+    TabOrder = 0
+    object nama: TEdit
+      Left = 282
+      Height = 46
+      Top = 0
+      Width = 224
+      Align = alRight
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 4
+    Height = 46
+    Top = 76
+    Width = 506
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 20
+    BevelOuter = bvNone
+    Caption = '  Password'
+    ClientHeight = 46
+    ClientWidth = 506
+    ParentBackground = False
+    TabOrder = 1
+    object sandi: TEdit
+      Left = 282
+      Height = 46
+      Top = 0
+      Width = 224
+      Align = alRight
+      EchoMode = emPassword
+      OnEnter = sandiEnter
+      OnKeyDown = sandiKeyDown
+      OnKeyPress = sandiKeyPress
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 62
+    Top = 122
+    Width = 530
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 62
+    ClientWidth = 530
+    ParentBackground = False
+    TabOrder = 2
+    object notif: TLabel
+      Left = 18
+      Height = 25
+      Top = 16
+      Width = 12
+      Caption = '...'
+      Font.Color = clRed
+      ParentFont = False
+      Visible = False
+    end
+    object Blogin: TButton
+      Left = 328
+      Height = 38
+      Top = 9
+      Width = 88
+      Caption = 'Start'
+      OnClick = BloginClick
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 202
+      Height = 38
+      Top = 14
+      Width = 113
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+  end
+  object Edit1: TEdit
+    Left = 32
+    Height = 33
+    Top = 216
+    Width = 400
+    TabOrder = 3
+    Text = 'Edit1'
+  end
+end

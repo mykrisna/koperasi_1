@@ -1,0 +1,73 @@
+object dm1: Tdm1
+  OldCreateOrder = False
+  Height = 359
+  HorizontalOffset = 1367
+  VerticalOffset = 144
+  Width = 475
+  PPI = 144
+  object dbconn: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    AfterConnect = dbconnAfterConnect
+    HostName = '127.0.0.1'
+    Port = 3306
+    Database = 'db_006'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\koperasi\libmariadb.dll'
+    Left = 48
+    Top = 36
+  end
+  object q1: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT * FROM tb_uom'
+    )
+    Params = <>
+    Left = 120
+    Top = 32
+  end
+  object sqlexec: TZQuery
+    Connection = dbconn
+    Params = <>
+    Left = 200
+    Top = 32
+  end
+  object d1: TDataSource
+    DataSet = q1
+    Left = 288
+    Top = 35
+  end
+  object dtbrg: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT * FROM tb_brg'
+    )
+    Params = <>
+    Left = 120
+    Top = 128
+  end
+  object d2: TDataSource
+    DataSet = dtbrg
+    Left = 296
+    Top = 128
+  end
+  object d3: TDataSource
+    DataSet = uom
+    Left = 296
+    Top = 216
+  end
+  object uom: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT id_uom,uom FROM tb_uom;'
+    )
+    Params = <>
+    Left = 120
+    Top = 224
+  end
+end

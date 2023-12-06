@@ -1,0 +1,102 @@
+object Flogin: TFlogin
+  Left = 319
+  Height = 135
+  Top = 177
+  Width = 291
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Koperasi | Top And Top Apparel'
+  ClientHeight = 135
+  ClientWidth = 291
+  Color = clWhite
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.0.4'
+  object Panel1: TPanel
+    Left = 3
+    Height = 31
+    Top = 13
+    Width = 275
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 3
+    BorderSpacing.Top = 13
+    BorderSpacing.Right = 13
+    BorderSpacing.Bottom = 7
+    BevelOuter = bvNone
+    Caption = '  Username'
+    ClientHeight = 31
+    ClientWidth = 275
+    ParentBackground = False
+    TabOrder = 0
+    object nama: TEdit
+      Left = 126
+      Height = 31
+      Top = 0
+      Width = 149
+      Align = alRight
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 3
+    Height = 31
+    Top = 51
+    Width = 275
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 3
+    BorderSpacing.Right = 13
+    BevelOuter = bvNone
+    Caption = '  Password'
+    ClientHeight = 31
+    ClientWidth = 275
+    ParentBackground = False
+    TabOrder = 1
+    object sandi: TEdit
+      Left = 126
+      Height = 31
+      Top = 0
+      Width = 149
+      Align = alRight
+      EchoMode = emPassword
+      OnEnter = sandiEnter
+      OnKeyDown = sandiKeyDown
+      OnKeyPress = sandiKeyPress
+      OnUTF8KeyPress = sandiUTF8KeyPress
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 41
+    Top = 82
+    Width = 291
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 41
+    ClientWidth = 291
+    ParentBackground = False
+    TabOrder = 2
+    object notif: TLabel
+      Left = 12
+      Height = 19
+      Top = 11
+      Width = 12
+      Caption = '...'
+      Font.Color = clRed
+      ParentFont = False
+      Visible = False
+    end
+    object Blogin: TButton
+      Left = 219
+      Height = 25
+      Top = 6
+      Width = 59
+      Caption = 'Start'
+      OnClick = BloginClick
+      TabOrder = 0
+    end
+  end
+end

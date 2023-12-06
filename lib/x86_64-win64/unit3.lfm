@@ -1,0 +1,12 @@
+object Fbarang: TFbarang
+  Left = 564
+  Height = 360
+  Top = 147
+  Width = 480
+  BorderIcons = [biSystemMenu]
+  Caption = 'Data Barang'
+  Color = clWhite
+  DesignTimePPI = 144
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+end

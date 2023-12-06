@@ -1,0 +1,761 @@
+object Ftr: TFtr
+  Left = 553
+  Height = 465
+  Top = 320
+  Width = 888
+  Caption = 'Koperasi | Top And Top Apparel'
+  ClientHeight = 465
+  ClientWidth = 888
+  Color = clWhite
+  DesignTimePPI = 144
+  OnClose = FormClose
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  WindowState = wsMaximized
+  object SpkToolbar1: TSpkToolbar
+    Left = 0
+    Height = 163
+    Top = 0
+    Width = 888
+    Appearance.Tab.TabHeaderFont.Color = 9126421
+    Appearance.Tab.BorderColor = 14922381
+    Appearance.Tab.CornerRadius = 6
+    Appearance.Tab.GradientFromColor = 16115934
+    Appearance.Tab.GradientToColor = 15587527
+    Appearance.Tab.GradientType = bkConcave
+    Appearance.Tab.InactiveTabHeaderFontColor = 9126421
+    Appearance.MenuButton.CaptionFont.Color = clWhite
+    Appearance.MenuButton.IdleFrameColor = 10569759
+    Appearance.MenuButton.IdleGradientFromColor = 14649927
+    Appearance.MenuButton.IdleGradientToColor = 12017961
+    Appearance.MenuButton.IdleGradientType = bkConcave
+    Appearance.MenuButton.IdleCaptionColor = clWhite
+    Appearance.MenuButton.HotTrackFrameColor = 10569759
+    Appearance.MenuButton.HotTrackGradientFromColor = 15179099
+    Appearance.MenuButton.HotTrackGradientToColor = 12478257
+    Appearance.MenuButton.HotTrackGradientType = bkConcave
+    Appearance.MenuButton.HotTrackCaptionColor = clWhite
+    Appearance.MenuButton.HotTrackBrightnessChange = 40
+    Appearance.MenuButton.ActiveFrameColor = 11095324
+    Appearance.MenuButton.ActiveGradientFromColor = 14518846
+    Appearance.MenuButton.ActiveGradientToColor = 12411174
+    Appearance.MenuButton.ActiveGradientType = bkConcave
+    Appearance.MenuButton.ActiveCaptionColor = clWhite
+    Appearance.MenuButton.ShapeStyle = mbssRounded
+    Appearance.Pane.BorderDarkColor = 14335646
+    Appearance.Pane.BorderLightColor = 16315117
+    Appearance.Pane.CaptionBgColor = 15849922
+    Appearance.Pane.CaptionFont.Color = 9126421
+    Appearance.Pane.GradientFromColor = 16115934
+    Appearance.Pane.GradientToColor = 15587527
+    Appearance.Pane.GradientType = bkConcave
+    Appearance.Element.CaptionFont.Color = 9126421
+    Appearance.Element.IdleFrameColor = 14727067
+    Appearance.Element.IdleGradientFromColor = 15653832
+    Appearance.Element.IdleGradientToColor = 15323324
+    Appearance.Element.IdleGradientType = bkConcave
+    Appearance.Element.IdleInnerLightColor = 15852501
+    Appearance.Element.IdleInnerDarkColor = 15520702
+    Appearance.Element.IdleCaptionColor = 11631958
+    Appearance.Element.HotTrackFrameColor = 10211293
+    Appearance.Element.HotTrackGradientFromColor = 14351615
+    Appearance.Element.HotTrackGradientToColor = 5101567
+    Appearance.Element.HotTrackGradientType = bkConcave
+    Appearance.Element.HotTrackInnerLightColor = 12972543
+    Appearance.Element.HotTrackInnerDarkColor = 8045272
+    Appearance.Element.HotTrackCaptionColor = 8864367
+    Appearance.Element.HotTrackBrightnessChange = 40
+    Appearance.Element.ActiveFrameColor = 5535371
+    Appearance.Element.ActiveGradientFromColor = 7126014
+    Appearance.Element.ActiveGradientToColor = 4035324
+    Appearance.Element.ActiveGradientType = bkConcave
+    Appearance.Element.ActiveInnerLightColor = 961020
+    Appearance.Element.ActiveInnerDarkColor = 961020
+    Appearance.Element.ActiveCaptionColor = 8405614
+    Appearance.Element.Style = esRounded
+    TabIndex = 0
+    LargeImages = ImageList1
+    MenuButtonCaption = 'Menu'
+    ParentShowHint = False
+    ShowHint = True
+    Tabs = (
+      'SpkTab2'
+    )
+    object SpkTab2: TSpkTab
+      CustomAppearance.Tab.TabHeaderFont.Color = 9126421
+      CustomAppearance.Tab.BorderColor = 14922381
+      CustomAppearance.Tab.CornerRadius = 6
+      CustomAppearance.Tab.GradientFromColor = 16115934
+      CustomAppearance.Tab.GradientToColor = 15587527
+      CustomAppearance.Tab.GradientType = bkConcave
+      CustomAppearance.Tab.InactiveTabHeaderFontColor = 9126421
+      CustomAppearance.MenuButton.CaptionFont.Color = clWhite
+      CustomAppearance.MenuButton.IdleFrameColor = 10569759
+      CustomAppearance.MenuButton.IdleGradientFromColor = 14649927
+      CustomAppearance.MenuButton.IdleGradientToColor = 12017961
+      CustomAppearance.MenuButton.IdleGradientType = bkConcave
+      CustomAppearance.MenuButton.IdleCaptionColor = clWhite
+      CustomAppearance.MenuButton.HotTrackFrameColor = 10569759
+      CustomAppearance.MenuButton.HotTrackGradientFromColor = 15179099
+      CustomAppearance.MenuButton.HotTrackGradientToColor = 12478257
+      CustomAppearance.MenuButton.HotTrackGradientType = bkConcave
+      CustomAppearance.MenuButton.HotTrackCaptionColor = clWhite
+      CustomAppearance.MenuButton.HotTrackBrightnessChange = 40
+      CustomAppearance.MenuButton.ActiveFrameColor = 11095324
+      CustomAppearance.MenuButton.ActiveGradientFromColor = 14518846
+      CustomAppearance.MenuButton.ActiveGradientToColor = 12411174
+      CustomAppearance.MenuButton.ActiveGradientType = bkConcave
+      CustomAppearance.MenuButton.ActiveCaptionColor = clWhite
+      CustomAppearance.MenuButton.ShapeStyle = mbssRounded
+      CustomAppearance.Pane.BorderDarkColor = 14335646
+      CustomAppearance.Pane.BorderLightColor = 16315117
+      CustomAppearance.Pane.CaptionBgColor = 15849922
+      CustomAppearance.Pane.CaptionFont.Color = 9126421
+      CustomAppearance.Pane.GradientFromColor = 16115934
+      CustomAppearance.Pane.GradientToColor = 15587527
+      CustomAppearance.Pane.GradientType = bkConcave
+      CustomAppearance.Element.IdleFrameColor = 14727067
+      CustomAppearance.Element.IdleGradientFromColor = 15653832
+      CustomAppearance.Element.IdleGradientToColor = 15323324
+      CustomAppearance.Element.IdleGradientType = bkConcave
+      CustomAppearance.Element.IdleInnerLightColor = 15852501
+      CustomAppearance.Element.IdleInnerDarkColor = 15520702
+      CustomAppearance.Element.IdleCaptionColor = 11631958
+      CustomAppearance.Element.HotTrackFrameColor = 10211293
+      CustomAppearance.Element.HotTrackGradientFromColor = 14351615
+      CustomAppearance.Element.HotTrackGradientToColor = 5101567
+      CustomAppearance.Element.HotTrackGradientType = bkConcave
+      CustomAppearance.Element.HotTrackInnerLightColor = 12972543
+      CustomAppearance.Element.HotTrackInnerDarkColor = 8045272
+      CustomAppearance.Element.HotTrackCaptionColor = 8864367
+      CustomAppearance.Element.HotTrackBrightnessChange = 40
+      CustomAppearance.Element.ActiveFrameColor = 5535371
+      CustomAppearance.Element.ActiveGradientFromColor = 7126014
+      CustomAppearance.Element.ActiveGradientToColor = 4035324
+      CustomAppearance.Element.ActiveGradientType = bkConcave
+      CustomAppearance.Element.ActiveInnerLightColor = 961020
+      CustomAppearance.Element.ActiveInnerDarkColor = 961020
+      CustomAppearance.Element.ActiveCaptionColor = 8405614
+      CustomAppearance.Element.Style = esRounded
+      Caption = '   Data Transaksi   '
+      Panes = (
+        'SpkPane1'
+        'SpkPane2'
+      )
+      object SpkPane1: TSpkPane
+        Caption = 'Barang'
+        Items = (
+          'SpkLargeButton1'
+          'SpkLargeButton2'
+          'SpkLargeButton3'
+          'SpkLargeButton4'
+        )
+        object SpkLargeButton1: TSpkLargeButton
+          Caption = 'Data_Barang'
+          OnClick = SpkLargeButton1Click
+          LargeImageIndex = 1
+        end
+        object SpkLargeButton2: TSpkLargeButton
+          Caption = 'Satuan'
+          LargeImageIndex = 0
+        end
+        object SpkLargeButton3: TSpkLargeButton
+          Caption = 'Grup_Barang'
+        end
+        object SpkLargeButton4: TSpkLargeButton
+          Caption = 'Stock_Barang'
+        end
+      end
+      object SpkPane2: TSpkPane
+        Caption = 'Transaksi'
+        Items = (
+          'SpkLargeButton5'
+          'SpkLargeButton6'
+        )
+        object SpkLargeButton5: TSpkLargeButton
+          Caption = 'Setup_Harga'
+        end
+        object SpkLargeButton6: TSpkLargeButton
+          Caption = 'Laporan_Penjualan'
+        end
+      end
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 4
+    Height = 0
+    Top = 463
+    Width = 880
+    Align = alClient
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    Color = clWindow
+    Columns = <>
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    Left = 4
+    Height = 399
+    Top = 175
+    Width = 880
+    ActivePage = TabSheet1
+    Align = alTop
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Transaksi'
+      ClientHeight = 361
+      ClientWidth = 872
+      object Label1: TLabel
+        Left = 8
+        Height = 32
+        Top = 66
+        Width = 135
+        Caption = 'Kode Barang'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object kd_brg: TEdit
+        Left = 192
+        Height = 33
+        Top = 66
+        Width = 288
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 8
+        Height = 32
+        Top = 112
+        Width = 144
+        Caption = 'Nama Barang'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Lbrg: TLabel
+        Left = 192
+        Height = 32
+        Top = 112
+        Width = 15
+        Caption = '...'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 8
+        Height = 32
+        Top = 164
+        Width = 144
+        Caption = 'Harga Barang'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Lharga: TLabel
+        Left = 192
+        Height = 32
+        Top = 164
+        Width = 15
+        Caption = '...'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 8
+        Height = 32
+        Top = 212
+        Width = 43
+        Caption = 'QTY'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object qty: TEdit
+        Left = 192
+        Height = 33
+        Top = 212
+        Width = 116
+        TabOrder = 1
+        Text = '1'
+      end
+      object Lsatuan: TLabel
+        Left = 328
+        Height = 32
+        Top = 212
+        Width = 15
+        Caption = '...'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Panel1: TPanel
+        Left = 206
+        Height = 353
+        Top = 4
+        Width = 662
+        Align = alRight
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 4
+        BorderSpacing.Bottom = 4
+        BevelOuter = bvNone
+        BorderStyle = bsSingle
+        ClientHeight = 349
+        ClientWidth = 658
+        ParentBackground = False
+        TabOrder = 2
+        object Label5: TLabel
+          Left = 10
+          Height = 74
+          Top = 8
+          Width = 152
+          Caption = 'TOTAL'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Label6: TLabel
+          Left = 264
+          Height = 74
+          Top = 8
+          Width = 30
+          Caption = '0'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Label7: TLabel
+          Left = 10
+          Height = 74
+          Top = 78
+          Width = 160
+          Caption = 'BAYAR'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object bayar: TEdit
+          Left = 266
+          Height = 63
+          Top = 90
+          Width = 366
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -41
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 0
+          Text = '0'
+        end
+        object Label8: TLabel
+          Left = 10
+          Height = 74
+          Top = 171
+          Width = 219
+          Caption = 'KEMBALI'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Lkembali: TLabel
+          Left = 266
+          Height = 74
+          Top = 171
+          Width = 30
+          Caption = '0'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object BitBtn1: TBitBtn
+          Cursor = crHandPoint
+          Left = 10
+          Height = 78
+          Top = 261
+          Width = 638
+          Align = alBottom
+          BorderSpacing.Left = 10
+          BorderSpacing.Right = 10
+          BorderSpacing.Bottom = 10
+          Caption = 'Simpan Transaksi'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -29
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36100000424D3610000000000000360000002800000020000000200000000100
+            2000000000000010000064000000640000000000000000000000FFFFFF00FF90
+            46FFFF9045FFFF8F44FFFF8E43FFFF8E42FFFF8D41FFFF8D40FFFF8C3FFFFF8C
+            3EFFFF8B3DFFFF8A3CFFFF8A3BFFFF893AFFFF8939FFFF8838FFFF8738FFFF87
+            37FFFF8636FFFF8635FFFF8534FFFF8433FFFF8432FFFF8331FFFF8330FFFF82
+            2FFFFF812EFFFF812DFFFF802CFFFF802BFFFF7F2AFFFFFFFF00FFFFFF00FF91
+            47FFFF9046FFFF9045FFFF8F44FFFF8F43FFFF8E42FFFF8D41FFFF8D40FFFF8C
+            3FFFFF8C3EFFFF8B3DFFFF8A3CFFFF8A3BFFFF893AFFFF893AFFFF8839FFFF87
+            38FFFF8737FFFF8636FFFF8635FFFF8534FFFF8433FFFF8432FFFF8331FFFF83
+            30FFFF822FFFFF812EFFFF812DFFFF802CFFFF802BFFFFFFFF00FFFFFF00FF92
+            48FFFF9147FFFF9046FFFF9045FF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFFFF822FFFFF812EFFFF812DFFFF802CFFFFFFFF00FFFFFF00FF92
+            49FFFF9248FFFF9147FFFF9046FF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066FFFF0066
+            FFFF0066FFFFFF8330FFFF822FFFFF822EFFFF812DFFFFFFFF00FFFFFF00FF93
+            4AFFFF9249FFFF9248FFFF9147FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8331FFFF8330FFFF822FFFFF822EFFFFFFFF00FFFFFF00FF93
+            4BFFFF934AFFFF9249FFFF9248FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8432FFFF8331FFFF8330FFFF822FFFFFFFFF00FFFFFF00FF94
+            4CFFFF934BFFFF934AFFFF9249FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8533FFFF8432FFFF8331FFFF8330FFFFFFFF00FFFFFF00FF95
+            4DFFFF944CFFFF944BFFFF934AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8534FFFF8533FFFF8432FFFF8331FFFFFFFF00FFFFFF00FF95
+            4EFFFF954DFFFF944CFFFF944BFFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8635FFFF8534FFFF8533FFFF8432FFFFFFFF00FFFFFF00FF96
+            4FFFFF954EFFFF954DFFFF944CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8736FFFF8635FFFF8534FFFF8533FFFFFFFF00FFFFFF00FF97
+            50FFFF964FFFFF954EFFFF954DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8737FFFF8736FFFF8635FFFF8534FFFFFFFF00FFFFFF00FF97
+            51FFFF9750FFFF964FFFFF954EFFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8838FFFF8737FFFF8736FFFF8635FFFFFFFF00FFFFFF00FF98
+            52FFFF9751FFFF9750FFFF964FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8839FFFF8838FFFF8737FFFF8736FFFFFFFF00FFFFFF00FF99
+            53FFFF9852FFFF9751FFFF9751FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF893AFFFF8839FFFF8838FFFF8737FFFFFFFF00FFFFFF00FF99
+            54FFFF9953FFFF9853FFFF9752FFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8A3BFFFF893AFFFF8939FFFF8838FFFFFFFF00FFFFFF00FF9A
+            55FFFF9955FFFF9954FFFF9853FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFF8A3CFFFF8A3BFFFF893AFFFF8939FFFFFFFF00FFFFFF00FF9A
+            57FFFF9A56FFFF9955FFFF9954FFFFFDFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFCFAFFFF8B3DFFFF8A3CFFFF8A3BFFFF893BFFFFFFFF00FFFFFF00FF9B
+            58FFFF9A57FFFF9A56FFFF9955FFFFCFAFFFFFFDFBFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC
+            FBFFFFC8A4FFFF8C3EFFFF8B3DFFFF8A3DFFFF8A3CFFFFFFFF00FFFFFF00FF9C
+            59FFFF9B58FFFF9B57FFFF9A56FFFF9955FFFF9954FFFF9853FFFF9852FFFF97
+            51FFFF9650FFFF964FFFFF954EFFFF954DFFFF944CFFFF934BFFFF934AFFFF92
+            49FFFF9248FFFF9147FFFF9046FFFF9045FFFF8F44FFFF8F43FFFF8E42FFFF8D
+            41FFFF8D40FFFF8C3FFFFF8C3FFFFF8B3EFFFF8A3DFFFFFFFF00FFFFFF00FF9C
+            5AFFFF9C59FFFF9B58FFFF9B57FFFF9A56FFFF9955FFFF9954FFFF9853FFFF98
+            52FFFF9751FFFF9650FFFF964FFFFF954EFFFF954DFFFF944CFFFF934BFFFF93
+            4AFFFF9249FFFF9248FFFF9147FFFF9046FFFF9045FFFF8F44FFFF8F43FFFF8E
+            42FFFF8D41FFFF8D41FFFF8C40FFFF8C3FFFFF8B3EFFFFFFFF00FFFFFF00FF9D
+            5BFFFF9C5AFFFF9C59FFFF9B58FFFF9B57FFFF9A56FFFF9955FFFF9954FFFF98
+            53FFFF9852FFFF9751FFFF9650FFFF964FFFFF954EFFFF954DFFFF944CFFFF93
+            4BFFFF934AFFFF9249FFFF9248FFFF9147FFFF9046FFFF9045FFFF8F44FFFF8F
+            43FFFF8E43FFFF8E42FFFF8D41FFFF8C40FFFF8C3FFFFFFFFF00FFFFFF00FF9E
+            5CFFFF9D5BFFFF9C5AFFFF9C59FFFF9B58FFFF9B57FFFF9A56FFCAC0B9FFCAC0
+            B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0
+            B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFCAC0B9FFFF9045FFFF8F
+            45FFFF8F44FFFF8E43FFFF8E42FFFF8D41FFFF8C40FFFFFFFF00FFFFFF00FF9E
+            5DFFFF9E5CFFFF9D5BFFFF9C5AFFFF9C59FFFF9B58FFFF9B57FFCDC4BEFFCDC4
+            BEFFCDC4BEFFCDC4BEFFCDC4BEFFCDC4BEFFCDC4BEFFCDC4BEFFCDC4BEFFCDC4
+            BEFFFF944CFFFF944BFFFF934AFFFF9249FFCDC4BEFFCDC4BEFFFF9147FFFF90
+            46FFFF8F45FFFF8F44FFFF8E43FFFF8E42FFFF8D41FFFFFFFF00FFFFFF00FF9F
+            5EFFFF9E5DFFFF9E5CFFFF9D5BFFFF9D5AFFFF9C59FFFF9B58FFD0C8C3FFD0C8
+            C3FFD0C8C3FFD0C8C3FFD0C8C3FFD0C8C3FFD0C8C3FFD0C8C3FFD0C8C3FFD0C8
+            C3FFFF954DFFFF944CFFFF944BFFFF934AFFD0C8C3FFD0C8C3FFFF9148FFFF91
+            47FFFF9046FFFF8F45FFFF8F44FFFF8E43FFFF8E42FFFFFFFF00FFFFFF00FFA0
+            5FFFFF9F5EFFFF9E5DFFFF9E5CFFFF9D5BFFFF9D5AFFFF9C59FFD3CDC8FFD3CD
+            C8FFD3CDC8FFD3CDC8FFD3CDC8FFD3CDC8FFD3CDC8FFD3CDC8FFD3CDC8FFD3CD
+            C8FFFF954EFFFF954DFFFF944CFFFF944BFFD3CDC8FFD3CDC8FFFF9249FFFF91
+            48FFFF9147FFFF9046FFFF8F45FFFF8F44FFFF8E43FFFFFFFF00FFFFFF00FFA0
+            60FFFFA05FFFFF9F5EFFFF9E5DFFFF9E5CFFFF9D5BFFFF9D5AFFD7D1CDFFD7D1
+            CDFFD7D1CDFFD7D1CDFFD7D1CDFFD7D1CDFFD7D1CDFFD7D1CDFFD7D1CDFFD7D1
+            CDFFFF964FFFFF954EFFFF954DFFFF944CFFD7D1CDFFD7D1CDFFFF924AFFFF92
+            49FFFF9148FFFF9147FFFF9046FFFF9045FFFF8F44FFFFFFFF00FFFFFF00FFA1
+            61FFFFA060FFFFA05FFFFF9F5EFFFF9E5DFFFF9E5CFFFF9D5BFFDAD5D2FFDAD5
+            D2FFDAD5D2FFDAD5D2FFDAD5D2FFDAD5D2FFDAD5D2FFDAD5D2FFDAD5D2FFDAD5
+            D2FFFF9750FFFF964FFFFF964EFFFF954EFFDAD5D2FFDAD5D2FFFF934BFFFF93
+            4AFFFF9249FFFF9148FFFF9147FFFF9046FFFF9045FFFFFFFF00FFFFFF00FFA1
+            62FFFFA161FFFFA060FFFFA05FFFFF9F5EFFFF9E5DFFFF9E5CFFDDD9D6FFDDD9
+            D6FFDDD9D6FFDDD9D6FFDDD9D6FFDDD9D6FFDDD9D6FFDDD9D6FFDDD9D6FFDDD9
+            D6FFFF9751FFFF9750FFFF9650FFFF964FFFDDD9D6FFDDD9D6FFFF944CFFFF93
+            4BFFFF934AFFFF9249FFFF9148FFFF9147FFFF9046FFFFFFFF00FFFFFF00FFA2
+            63FFFFA162FFFFA161FFFFA060FFFFA05FFFFF9F5EFFFF9F5DFFE1DDDBFFE1DD
+            DBFFE1DDDBFFE1DDDBFFE1DDDBFFE1DDDBFFE1DDDBFFE1DDDBFFE1DDDBFFE1DD
+            DBFFFF9852FFFF9752FFFF9751FFFF9650FFE1DDDBFFE1DDDBFFFF944DFFFF94
+            4CFFFF934BFFFF934AFFFF9249FFFF9148FFFF9147FFFFFFFF00FFFFFF00FFA3
+            64FFFFA263FFFFA262FFFFA161FFFFA060FFFFA05FFFFF9F5EFFE4E2E0FFE4E2
+            E0FFE4E2E0FFE4E2E0FFE4E2E0FFE4E2E0FFE4E2E0FFE4E2E0FFE4E2E0FFE4E2
+            E0FFFF9954FFFF9853FFFF9752FFFF9751FFE4E2E0FFE4E2E0FFFF954EFFFF94
+            4DFFFF944CFFFF934BFFFF934AFFFF9249FFFF904788FFFFFF00FFFFFF00FFA3
+            65FFFFA364FFFFA263FFFFA262FFFFA161FFFFA060FFFFA05FFFE7E6E5FFE7E6
+            E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6
+            E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFE7E6E5FFFF964FFFFF95
+            4EFFFF944DFFFF944CFFFF934BFFFF924988FFFFFF00FFFFFF00FFFFFF00FFA4
+            66FFFFA365FFFFA364FFFFA263FFFFA262FFFFA161FFFFA060FFEAEAEAFFEAEA
+            EAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEA
+            EAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFFF9650FFFF96
+            4FFFFF954EFFFF954DFFFF944D88FFFFFF00FFFFFF00FFFFFF00
+          }
+          ParentFont = False
+          TabOrder = 1
+        end
+        object Label16: TLabel
+          Left = 242
+          Height = 74
+          Top = 78
+          Width = 12
+          Caption = ':'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Label17: TLabel
+          Left = 242
+          Height = 74
+          Top = 171
+          Width = 12
+          Caption = ':'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Label18: TLabel
+          Left = 242
+          Height = 74
+          Top = 8
+          Width = 12
+          Caption = ':'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -56
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+      end
+      object Label9: TLabel
+        Left = 8
+        Height = 1
+        Top = 12
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 8
+        Height = 32
+        Top = 18
+        Width = 156
+        Caption = 'Kode Transaksi'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object kdtrn: TEdit
+        Left = 192
+        Height = 33
+        Top = 18
+        Width = 288
+        ReadOnly = True
+        TabOrder = 3
+        Text = '-'
+      end
+      object Label11: TLabel
+        Left = 176
+        Height = 32
+        Top = 18
+        Width = 5
+        Caption = ':'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 176
+        Height = 32
+        Top = 66
+        Width = 5
+        Caption = ':'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 176
+        Height = 32
+        Top = 112
+        Width = 5
+        Caption = ':'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label14: TLabel
+        Left = 176
+        Height = 32
+        Top = 164
+        Width = 5
+        Caption = ':'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label15: TLabel
+        Left = 176
+        Height = 32
+        Top = 212
+        Width = 5
+        Caption = ':'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -24
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+    end
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 8
+    Top = 163
+    Width = 888
+    Align = alTop
+    ResizeAnchor = akTop
+  end
+  object ImageList1: TImageList
+    Left = 953
+    Top = 72
+    Bitmap = {
+      4C7A040000001000000010000000CF0700000000000078DADD960B5493E71DC6
+      63C5B5CEAD755DEDA49EB9D675AEAE5DAD47CFA43B30A94C3D6AEB0D01011115
+      54901627C8041189E3220A823245262A94BB09170960018D844BB825E41E4AB8
+      172540C235512024F4D9FB65E29CE1349B9E9E9EB3EF9CE7BCDF973CBFFFF3FE
+      DFBC6F1200347C0FA2CB95363426BFE0955CE1035B8EE23847A59D6F8EE1A81E
+      CD3E9C2FDEB5248BCDFDB8B203F4CE4748E8FF16CE223516154AB49F64652584
+      35F52C31E1D4DAB9B6E5CD5E73F384ADFE1C1E6A1971A821CA178991725F8342
+      360BB5D78371F336134B4A9B0D34268F419729573E9EA7D32C66E3909B4009C6
+      8001F9C3006308286E6C80E48227A4B17BC14D0D4342B716D17D40642FE0A978
+      88378B9B4063F06B084F7FB55881F9051238F3EEA3A09187BAEC187019179027
+      9122B9E7210AEF15A1EEFA09149430F0176117DE296DC18F597258E48941F18B
+      ABD5F85832016F5609AE259CC4B6323ECE768F236500485203F1640D768BFAE1
+      98C1C09DCB7E58D1308495621D5E2E901B79CB2A355691E7231C3E128BF260C7
+      1FC082223996B3DBB095A7C4CF5812BC7BB70D9B25A328B9760A36321DDE17EA
+      F0A3C7FCCF2B54785F44F2CB79B854988BFD1D5338D63D0507F12061A5F06E1D
+      874FD7149C5B0DB84DF855121D96344EC0E296CCC8FF94A3C2AF0513F064F370
+      81950B97563D3E27FEC36DE3F855890201A49647BB01DB157A14279DC2EF453A
+      BCC51BC74B8FF957EEF563117F1C7BEE3620A620C7E8F32473F0508C6131E1BF
+      20B55C49CD8D5FEB5148F87749D6EBF56398954FF17DAB694C41F3BCB26E3895
+      D621EA560E367D3D09D73603DC9AC7B0E82B050E7418604F6A7E229F042B2904
+      BFE00E617641D3148DC14BFCD7BE1BB5207BD46B4D5AAE329891095BB90EF62D
+      7A38348DC192F06EA4D62692BDA2518BECCBC7416336B2E8B29E0F9EDD87D23E
+      D5EBDBD9A288B9B7A4DA95F503D8227B8485B79BB1A5691CBF647781ECB38654
+      916CA3F9B3D36E49E676F53596CCF0729E0816B9C216B2BF777254AAFFED0CCA
+      941F92F5F5E2F46BE7E07B3AE7334928342CB0B6D6A6D9D86846972F1F1E59B8
+      50955659A95BF0DFB03C9E61CEFAF50FC5AEAE13A0B46EDD432C5B368479F37A
+      C51C8ECE6C1FD7AE4D386CDD3A065F5F8351D4FD471F0D63FEFC7ED0E9DA9DE6
+      F8C4C4F1202A73867CC26B82CCF17171633B49CF20BD1B45DD5B5AAA307BB692
+      E2CDE657554DCE79E38D7EF1E2C56A5022F7983347091A4D29FAAEFEC772829D
+      34F1F6F2D1D8CF263B4F6EEA705F95F280648ED0683D23963BD40FACAB359D56
+      FCD1C9DFD40CCA360B869C9E65C792DCA14BF50235921A50855A61E0B29BA34F
+      EB98D30E720EDC5B74A04652036F55AAB0B661C0719AD7C4EF9053EC544EA0B1
+      0679C6C0DFACD17BEC3DD91A91464EB1D4770035AE116AF076F5002CCA7A65D3
+      3CC9D3CD94AFF4FFAD8EE4E966CA7FA954A99BE607C36D651443E5522379465F
+      E087E8F15B2AA3FAA5182A971AC9337EC2EE03ADA4E749FED0554F2763BF64CE
+      D448B14ABFA5184CD8ED40AD159547CD991A2976568912B6F5830E4FAF21B556
+      54BFD49C49AE9462A7DFA3D68AEA979A33C9953ECBFE90A22E7F7B2BBB94A3DB
+      AAD3021CC6D38FEF427AA03332825C9119BC1B5927F7203BC41D3743F78141F7
+      00F3B427986107E1BCDE2A94F6F8CA8BF41EAD488B4555E64570B32FA1967905
+      75B94968B87503FCC22F21284E87B0240BE23B4C48D97990DDCBC7E1BDCE21D3
+      7C4A901B44A5D9E812D740A910A1B74D8AFE8E26A8BF69C1E083760C29BB30D2
+      7F1F1A752F1E0EA928DFD4D37CC0F6D5483CB21D5529A1A8CD3A4B14859ACC33
+      A8C9204A8F00373D1CDCB47054A785E1769C2F64E5057A6F77A727FCB16DAB71
+      D17B339ACB12715F5080EEC67C74F372F14D430EBAEA19E8AABB89CEDA2C7472
+      3351957C0AFCA274FD01971D26BCACE822BA6AB3D15993890E6E063AAAD3D05E
+      998AF68A14B47192D15A7E1D9CA4405433AFEAF73B7C6AC28BF3A2D156910CDD
+      F8A319D55C7209EC047FDC4D8DD3EFD9B6C184E76787435176C5B85E3349CE8A
+      41D9C52F509C18AE77F974AD095F9F1682A6C258E23B0F59413464B7CE419A1F
+      05696E242439111033C3F055CC21E4C605E91D37589BF0DCEBC721317AC38D5E
+      D1CDD31065874298150261E64908324EA0286A1F32227CF53BD6FEC184AF483C
+      4A7C21C4170C41FA0934A605829FFA57F05302C04BF607EF861F5861AEB811EC
+      A1DF6AB3C284BF177F98788F19BD0D378EA2E1DA11D427F9A2EEEAE7A8FB870F
+      6A13BD917FCA01097EBBF49BAD3E30E1CBCE7B101FF1261E46ED152FD4241C42
+      CDE503E0FEDD13DCF8FDA8BEB80F39415B11E7F5997EC3AAA526FCED4837E2F5
+      4075FC3EE2DD8BAAB83DA88C7543E5795754C4B8A0227A176E066CC419773BBD
+      DDF277029FDABF6314CFA23BA2D2E87306E79C1338672939A23CCAE189B2FD37
+      80EE68A57CFBCD57174CF32E36CB7CCEB9AF194CF6B143D6D175DFA9A48336D8
+      F3A7653BA75984FE4E4B84E7D48BB0FF56F9E5E7D334FFBCD70CBCA6530A75FE
+      19801D070D23083D570F4271CE01E2A85D1890569BE545D16E98C8217F130AE9
+      FFA191646FDCF178CF2C3FD22A848A4998E2088C7CE983FBB18E9085FC1982D3
+      5BA012B2CDF28ACC084CF4B503538627AF7DAB9F2475F9A88B7431CB0FB70AD0
+      971745F2C33174FD10DAA3B64010F047F0C3ECD12FBCFB7F9F3F4A3E7F55713C
+      702716C3293EE888B68784BE11A2D8FD50CBCC7FFECFB1FF5EECFCBDE0EFFF3F
+      011F204D74
+    }
+  end
+end

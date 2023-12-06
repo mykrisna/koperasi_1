@@ -1,0 +1,43 @@
+object dm1: Tdm1
+  OldCreateOrder = False
+  Height = 335
+  HorizontalOffset = 383
+  VerticalOffset = 119
+  Width = 450
+  object dbconn: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    HostName = '127.0.0.1'
+    Port = 3306
+    Database = 'db_006'
+    User = 'root'
+    Password = 'tta'
+    Protocol = 'mysql'
+    Left = 32
+    Top = 24
+  end
+  object q1: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT * FROM tb_uom'
+    )
+    Params = <>
+    Left = 80
+    Top = 21
+  end
+  object sqlexec: TZQuery
+    Connection = dbconn
+    Params = <>
+    Left = 133
+    Top = 21
+  end
+  object d1: TDataSource
+    DataSet = q1
+    Left = 192
+    Top = 23
+  end
+end
