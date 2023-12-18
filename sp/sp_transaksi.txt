@@ -1,0 +1,36 @@
+DROP PROCEDURE IF EXISTS transaksi;
+DELIMITER //
+create procedure transaksi
+(
+IN in_id VARCHAR(100)
+)
+Begin
+INSERT INTO tb_tr (trid,id_brg,harga_beli,harga_jual,qty,uom)
+SELECT trid,id_brg,harga_beli,harga_jual,qty,uom FROM tb_tr_temp WHERE trid = in_id;
+DELETE FROM tb_tr_temp WHERE trid = in_id;
+end;
+//
+
+DROP PROCEDURE IF EXISTS brg;
+DELIMITER //
+create procedure brg
+(
+IN in_brg VARCHAR(100)
+)
+Begin
+SELECT 
+A.rowid,
+A.kd_brg,
+A.nama_brg,
+(ifnull(B.stock,0) - ifnull(jual,0)) AS stock,
+A.uom,
+A.sts,
+A.harga_beli,A.harga_jual,
+(A.harga_jual - A.harga_beli) AS defiasi
+FROM tb_brg A
+LEFT JOIN (SELECT id_brg,SUM(qty) AS stock FROM tb_stock GROUP BY id_brg)B ON B.id_brg = A.rowid
+LEFT JOIN (SELECT id_brg,sum(qty) AS jual FROM tb_tr GROUP BY id_brg)C ON C.id_brg = A.rowid
+WHERE A.kd_brg LIKE in_brg OR A.nama_brg LIKE in_brg
+ORDER BY nama_brg;
+end;
+//
