@@ -1,0 +1,54 @@
+object Fpending: TFpending
+  Left = 555
+  Height = 638
+  Top = 151
+  Width = 459
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Transaksi Pending'
+  ClientHeight = 638
+  ClientWidth = 459
+  Color = clWhite
+  DesignTimePPI = 144
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 638
+    Top = 0
+    Width = 459
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'ID'
+        Width = 150
+        FieldName = 'trid'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Tgl Transaksi'
+        Width = 125
+        FieldName = 'tgl'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Nominal'
+        Width = 150
+        FieldName = 'nominal'
+        DisplayFormat = '###,###'
+      end>
+    DataSource = dm1.d6
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ReadOnly = True
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+end

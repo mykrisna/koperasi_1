@@ -1,0 +1,79 @@
+object Fcekbrg: TFcekbrg
+  Left = 343
+  Height = 526
+  Top = 156
+  Width = 1199
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cari Barang'
+  ClientHeight = 526
+  ClientWidth = 1199
+  Color = clWhite
+  DesignTimePPI = 144
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object Label1: TLabel
+    Left = 10
+    Height = 25
+    Top = 10
+    Width = 1189
+    Align = alTop
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    BorderSpacing.Bottom = 10
+    Caption = 'Cari barang'
+  end
+  object cari: TEdit
+    Left = 10
+    Height = 33
+    Top = 45
+    Width = 1179
+    Align = alTop
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 10
+    OnKeyPress = cariKeyPress
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 5
+    Height = 433
+    Top = 88
+    Width = 1189
+    Align = alClient
+    BorderSpacing.Left = 5
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 5
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Kode Barang'
+        Width = 160
+        FieldName = 'kd_brg'
+      end    
+      item
+        Title.Caption = 'Nama Barang'
+        Width = 600
+        FieldName = 'nama_brg'
+      end    
+      item
+        Title.Caption = 'Stock'
+        FieldName = 'stock'
+      end    
+      item
+        Title.Caption = 'Satuan'
+        FieldName = 'uom'
+      end    
+      item
+        Title.Caption = 'Harga Jual'
+        FieldName = 'harga_jual'
+        DisplayFormat = '###,###'
+      end>
+    DataSource = dm1.d4
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ReadOnly = True
+    TabOrder = 1
+    OnDblClick = DBGrid1DblClick
+  end
+end
