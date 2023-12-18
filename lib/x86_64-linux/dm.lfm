@@ -1,9 +1,9 @@
 object dm1: Tdm1
   OldCreateOrder = False
-  Height = 335
-  HorizontalOffset = 383
-  VerticalOffset = 119
-  Width = 450
+  Height = 239
+  HorizontalOffset = 754
+  VerticalOffset = 130
+  Width = 317
   object dbconn: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
@@ -11,12 +11,14 @@ object dm1: Tdm1
       'AutoEncodeStrings=True'
       'controls_cp=CP_UTF8'
     )
+    AfterConnect = dbconnAfterConnect
     HostName = '127.0.0.1'
     Port = 3306
     Database = 'db_006'
     User = 'root'
     Password = 'tta'
     Protocol = 'mysql'
+    LibraryLocation = '/home/kopkarta/Documents/koperasi_1/libmysqlclient.so.21.2.35'
     Left = 32
     Top = 24
   end
@@ -39,5 +41,46 @@ object dm1: Tdm1
     DataSet = q1
     Left = 192
     Top = 23
+  end
+  object dtbrg: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT'
+      'A.rowid,'
+      'A.kd_brg,'
+      'A.nama_brg,'
+      '(ifnull(B.stock,0) - ifnull(jual,0)) AS stock,'
+      'A.uom,'
+      'A.sts,'
+      'A.harga_beli,'
+      'A.harga_jual,'
+      '(A.harga_jual - A.harga_beli) AS defiasi'
+      'FROM tb_brg A'
+      'LEFT JOIN (SELECT id_brg,SUM(qty) AS stock FROM tb_stock GROUP BY id_brg)B ON B.id_brg = A.rowid'
+      'LEFT JOIN (SELECT id_brg,sum(qty) AS jual FROM tb_tr WHERE sts = 1 GROUP BY id_brg)C ON C.id_brg = A.rowid'
+      'ORDER BY nama_brg;'
+    )
+    Params = <>
+    Left = 80
+    Top = 85
+  end
+  object d2: TDataSource
+    DataSet = dtbrg
+    Left = 197
+    Top = 85
+  end
+  object d3: TDataSource
+    DataSet = uom
+    Left = 197
+    Top = 144
+  end
+  object uom: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT id_uom,uom FROM tb_uom;'
+    )
+    Params = <>
+    Left = 80
+    Top = 149
   end
 end

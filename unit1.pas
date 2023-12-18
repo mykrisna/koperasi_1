@@ -14,8 +14,6 @@ type
 
   TFlogin = class(TForm)
     Blogin: TButton;
-    Button1: TButton;
-    Edit1: TEdit;
     nama: TEdit;
     notif: TLabel;
     Panel1: TPanel;
@@ -100,8 +98,8 @@ begin
                 notif.Visible := true;
              end else
              begin
-                  Flogin.Hide;
-                  ftr.show;
+                  //Flogin.Hide;
+                  ftr.showmodal;
                   notif.Caption:='';
                   notif.Visible := false;
              end;
@@ -117,7 +115,7 @@ end;
 
 procedure TFlogin.Button1Click(Sender: TObject);
 begin
-  //edit1.Text:= HashPassword('ok');
+
 end;
 
 end.

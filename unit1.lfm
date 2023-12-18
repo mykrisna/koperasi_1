@@ -1,13 +1,13 @@
 object Flogin: TFlogin
-  Left = 613
-  Height = 338
-  Top = 165
-  Width = 530
+  Left = 462
+  Height = 214
+  Top = 216
+  Width = 450
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Koperasi | Top And Top Apparel'
-  ClientHeight = 338
-  ClientWidth = 530
+  ClientHeight = 214
+  ClientWidth = 450
   Color = clWhite
   DesignTimePPI = 144
   OnCreate = FormCreate
@@ -15,9 +15,9 @@ object Flogin: TFlogin
   LCLVersion = '3.0.0.1'
   object Panel1: TPanel
     Left = 4
-    Height = 46
+    Height = 56
     Top = 20
-    Width = 506
+    Width = 426
     Align = alTop
     Alignment = taLeftJustify
     BorderSpacing.Left = 4
@@ -26,39 +26,39 @@ object Flogin: TFlogin
     BorderSpacing.Bottom = 10
     BevelOuter = bvNone
     Caption = '  Username'
-    ClientHeight = 46
-    ClientWidth = 506
+    ClientHeight = 56
+    ClientWidth = 426
     ParentBackground = False
     TabOrder = 0
     object nama: TEdit
-      Left = 282
-      Height = 46
+      Left = 162
+      Height = 56
       Top = 0
-      Width = 224
+      Width = 264
       Align = alRight
       TabOrder = 0
     end
   end
   object Panel2: TPanel
     Left = 4
-    Height = 46
-    Top = 76
-    Width = 506
+    Height = 56
+    Top = 86
+    Width = 426
     Align = alTop
     Alignment = taLeftJustify
     BorderSpacing.Left = 4
     BorderSpacing.Right = 20
     BevelOuter = bvNone
     Caption = '  Password'
-    ClientHeight = 46
-    ClientWidth = 506
+    ClientHeight = 56
+    ClientWidth = 426
     ParentBackground = False
     TabOrder = 1
     object sandi: TEdit
-      Left = 282
-      Height = 46
+      Left = 162
+      Height = 56
       Top = 0
-      Width = 224
+      Width = 264
       Align = alRight
       EchoMode = emPassword
       OnEnter = sandiEnter
@@ -71,12 +71,12 @@ object Flogin: TFlogin
   object Panel3: TPanel
     Left = 0
     Height = 62
-    Top = 122
-    Width = 530
+    Top = 142
+    Width = 450
     Align = alTop
     BevelOuter = bvNone
     ClientHeight = 62
-    ClientWidth = 530
+    ClientWidth = 450
     ParentBackground = False
     TabOrder = 2
     object notif: TLabel
@@ -90,30 +90,13 @@ object Flogin: TFlogin
       Visible = False
     end
     object Blogin: TButton
-      Left = 328
-      Height = 38
-      Top = 9
-      Width = 88
+      Left = 345
+      Height = 48
+      Top = 8
+      Width = 87
       Caption = 'Start'
       OnClick = BloginClick
       TabOrder = 0
     end
-    object Button1: TButton
-      Left = 202
-      Height = 38
-      Top = 14
-      Width = 113
-      Caption = 'Button1'
-      OnClick = Button1Click
-      TabOrder = 1
-    end
-  end
-  object Edit1: TEdit
-    Left = 32
-    Height = 33
-    Top = 216
-    Width = 400
-    TabOrder = 3
-    Text = 'Edit1'
   end
 end

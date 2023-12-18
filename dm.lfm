@@ -1,9 +1,9 @@
 object dm1: Tdm1
   OldCreateOrder = False
-  Height = 359
-  HorizontalOffset = 1367
-  VerticalOffset = 144
-  Width = 475
+  Height = 599
+  HorizontalOffset = 719
+  VerticalOffset = 163
+  Width = 732
   PPI = 144
   object dbconn: TZConnection
     ControlsCodePage = cCP_UTF8
@@ -18,9 +18,9 @@ object dm1: Tdm1
     Database = 'db_006'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\koperasi\libmariadb.dll'
+    LibraryLocation = 'D:\Projects\koperasi_1\libmariadb.dll'
     Left = 48
-    Top = 36
+    Top = 35
   end
   object q1: TZQuery
     Connection = dbconn
@@ -45,13 +45,7 @@ object dm1: Tdm1
   object dtbrg: TZQuery
     Connection = dbconn
     SQL.Strings = (
-      'SELECT'
-      'rowid,'
-      'kd_brg,'
-      'nama_brg,'
-      'uom,'
-      'sts'
-      'FROM tb_brg ORDER BY nama_brg;'
+      'CALL brg(''%%'');'
     )
     Params = <>
     Left = 120
@@ -75,5 +69,113 @@ object dm1: Tdm1
     Params = <>
     Left = 120
     Top = 224
+  end
+  object tb_tr_temp: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT A.rowid,A.trid,A.id_brg,B.kd_brg,B.nama_brg,A.harga_beli,A.harga_jual,A.qty,A.uom,A.crid,A.crdt,A.sts,(A.harga_jual * A.qty) as total '
+      'FROM tb_tr_temp A '
+      'LEFT JOIN tb_brg B ON B.rowid = A.id_brg;'
+    )
+    Params = <>
+    Left = 120
+    Top = 312
+  end
+  object dtrtemp: TDataSource
+    DataSet = tb_tr_temp
+    Left = 296
+    Top = 312
+  end
+  object laporan: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT A.trid,B.kd_brg,B.nama_brg,A.harga_beli,A.harga_jual,A.qty,A.uom,(A.harga_jual * A.qty) as total_jual,'
+      '((A.harga_jual - A.harga_beli) * A.qty) AS margin '
+      'FROM tb_tr A '
+      'LEFT JOIN tb_brg B ON B.rowid = A.id_brg'
+      'LEFT JOIN tb_pay C ON C.trid = A.trid '
+      'ORDER BY A.trid;'
+    )
+    Params = <>
+    Left = 120
+    Top = 408
+  end
+  object dtlaporan: TDataSource
+    DataSet = laporan
+    Left = 296
+    Top = 400
+  end
+  object url: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT url_id,url_printer,url_report FROM tb_url;'
+    )
+    Params = <>
+    Left = 120
+    Top = 504
+  end
+  object dtcaribrg: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'select * from ('
+      'SELECT'
+      'A.rowid,'
+      'A.kd_brg,'
+      'A.nama_brg,'
+      '(ifnull(B.stock,0) - ifnull(jual,0)) AS stock,'
+      'A.uom,'
+      'A.sts,'
+      'A.harga_beli,'
+      'A.harga_jual,'
+      '(A.harga_jual - A.harga_beli) AS defiasi'
+      'FROM tb_brg A'
+      'LEFT JOIN (SELECT id_brg,SUM(qty) AS stock FROM tb_stock GROUP BY id_brg)B ON B.id_brg = A.rowid'
+      'LEFT JOIN (SELECT id_brg,sum(qty) AS jual FROM tb_tr GROUP BY id_brg)C ON C.id_brg = A.rowid'
+      ') as tb_brg where stock > 0'
+      'ORDER BY nama_brg;'
+    )
+    Params = <>
+    Left = 392
+    Top = 128
+  end
+  object d4: TDataSource
+    DataSet = dtcaribrg
+    Left = 488
+    Top = 128
+  end
+  object sumjual: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT sum(A.harga_jual * A.qty) as total_penjual,'
+      'sum((A.harga_jual - A.harga_beli) * A.qty) AS total_margin '
+      'FROM tb_tr A '
+      'LEFT JOIN tb_brg B ON B.rowid = A.id_brg'
+      'LEFT JOIN tb_pay C ON C.trid = A.trid '
+      'ORDER BY A.trid;'
+    )
+    Params = <>
+    Left = 392
+    Top = 208
+  end
+  object d5: TDataSource
+    DataSet = sumjual
+    Left = 488
+    Top = 208
+  end
+  object pending: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'SELECT trid,DATE_FORMAT(date(crdt), ''%d %b %Y'') as tgl,sum(qty * harga_jual) AS nominal '
+      'FROM tb_tr_temp '
+      'GROUP BY trid,crdt ORDER BY crdt;'
+    )
+    Params = <>
+    Left = 392
+    Top = 304
+  end
+  object d6: TDataSource
+    DataSet = pending
+    Left = 488
+    Top = 304
   end
 end

@@ -5,7 +5,7 @@
     <PathDelim Value="\"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="project1"/>
+      <Title Value="KoperasiTTA"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -25,6 +25,18 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages>
+      <Item>
+        <PackageName Value="zrptlaz_dsg"/>
+      </Item>
+      <Item>
+        <PackageName Value="zrptlaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="indylaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="frce"/>
+      </Item>
       <Item>
         <PackageName Value="SpkToolbarPackage"/>
       </Item>
@@ -70,20 +82,44 @@
         <UnitName Value="Unit2"/>
       </Unit>
       <Unit>
-        <Filename Value="unit3.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="Fbarang"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Unit3"/>
-      </Unit>
-      <Unit>
         <Filename Value="unit4.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Fbrg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Finputstock"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frep"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fcekbrg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit7.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fpending"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit7"/>
       </Unit>
     </Units>
   </ProjectOptions>
