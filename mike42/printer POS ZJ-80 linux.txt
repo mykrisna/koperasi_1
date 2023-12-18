@@ -1,0 +1,17 @@
+Autoload printer POS ZJ-80
+
+1. cek port brp printer diinstall 
+   lsusb
+
+2. Clone escpos pada folder www
+   git clone git@github.com:mike42/escpos-php.git
+
+3. Masuk ke folder escpos-php
+   cd escpos-php
+   composer install
+4. Berikan hak akses 
+   lsusb
+   sudo chmod +777 /dev/usb/lp0
+   sudo nano /etc/udev/rules.d/99-custom.rules
+   SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5743", MODE="0666"
+   sudo systemctl restart udev
