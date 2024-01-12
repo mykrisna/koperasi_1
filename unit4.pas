@@ -21,6 +21,7 @@ type
     harga_jual: TEdit;
     Label6: TLabel;
     MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
     rowid: TEdit;
     harga_beli: TEdit;
     Label1: TLabel;
@@ -47,6 +48,7 @@ type
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
   private
 
   public
@@ -59,7 +61,7 @@ var
 implementation
 
 uses
-  dm,unit5;
+  dm,unit5,unit8;
 
   {$R *.lfm}
 
@@ -268,6 +270,17 @@ procedure TFbrg.MenuItem3Click(Sender: TObject);
 begin
   Finputstock.Label1.Caption := dm1.dtbrg.FieldByName('nama_brg').AsString;
   Finputstock.ShowModal;
+end;
+
+procedure TFbrg.MenuItem4Click(Sender: TObject);
+begin
+  with dm1.audit do begin
+    close;
+    sql.Clear;
+    sql.Add('CALL audit_brg('+dm1.dtbrg.FieldByName('rowid').AsString+');');
+    open;
+  end;
+  Faudit.ShowModal;
 end;
 
 end.

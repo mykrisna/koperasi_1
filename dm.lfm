@@ -1,8 +1,8 @@
 object dm1: Tdm1
   OldCreateOrder = False
   Height = 599
-  HorizontalOffset = 719
-  VerticalOffset = 163
+  HorizontalOffset = 907
+  VerticalOffset = 286
   Width = 732
   PPI = 144
   object dbconn: TZConnection
@@ -177,5 +177,19 @@ object dm1: Tdm1
     DataSet = pending
     Left = 488
     Top = 304
+  end
+  object audit: TZQuery
+    Connection = dbconn
+    SQL.Strings = (
+      'CALL audit_brg(58);'
+    )
+    Params = <>
+    Left = 395
+    Top = 400
+  end
+  object d7: TDataSource
+    DataSet = audit
+    Left = 491
+    Top = 400
   end
 end

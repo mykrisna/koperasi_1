@@ -1,7 +1,7 @@
 object Fbrg: TFbrg
-  Left = 332
+  Left = 346
   Height = 758
-  Top = 167
+  Top = 151
   Width = 1262
   BorderIcons = [biSystemMenu, biMaximize]
   Caption = 'Data Barang'
@@ -223,6 +223,7 @@ object Fbrg: TFbrg
         Title.Caption = 'Harga Beli'
         Width = 120
         FieldName = 'harga_beli'
+        DisplayFormat = '###,###,###'
       end    
       item
         MinSize = 10
@@ -232,6 +233,7 @@ object Fbrg: TFbrg
         Title.Caption = 'Harga Jual'
         Width = 120
         FieldName = 'harga_jual'
+        DisplayFormat = '###,###,###'
       end    
       item
         MinSize = 10
@@ -266,7 +268,12 @@ object Fbrg: TFbrg
     end
     object MenuItem2: TMenuItem
       Caption = 'Hapus data'
+      Visible = False
       OnClick = MenuItem2Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Audit Stok'
+      OnClick = MenuItem4Click
     end
   end
 end

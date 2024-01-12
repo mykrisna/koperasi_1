@@ -1,0 +1,109 @@
+object Faudit: TFaudit
+  Left = 351
+  Height = 555
+  Top = 148
+  Width = 1564
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'Audit Stok'
+  ClientHeight = 555
+  ClientWidth = 1564
+  Color = clWhite
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 555
+    Top = 0
+    Width = 1564
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'TGL'
+        FieldName = 'tgl'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Keterangan'
+        Width = 110
+        FieldName = 'keterangan'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'ID Transaksi'
+        Width = 112
+        FieldName = 'trid'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Nama Barang'
+        Width = 500
+        FieldName = 'nama_brg'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Qty Masuk'
+        Width = 110
+        FieldName = 'stock_masuk'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Qty Jual'
+        Width = 80
+        FieldName = 'jual'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sisa'
+        Width = 80
+        FieldName = 'sisa'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Harga Beli'
+        Width = 100
+        FieldName = 'harga_beli'
+        DisplayFormat = '###,###,###'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Harga Jual'
+        Width = 100
+        FieldName = 'harga_jual'
+        DisplayFormat = '###,###,###'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Margin'
+        Width = 90
+        FieldName = 'margin'
+        DisplayFormat = '###,###,###'
+      end    
+      item
+        Title.Color = clWhite
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Total Jual'
+        Width = 110
+        FieldName = 'total_jual'
+        DisplayFormat = '###,###,###'
+      end>
+    DataSource = dm1.d7
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ReadOnly = True
+    TabOrder = 0
+  end
+end

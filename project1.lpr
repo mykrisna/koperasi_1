@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, unit1, dm, zcomponent, unit2, unit4, unit5, indylaz, unit3, unit6,
-  unit7
+  unit7, unit8
   { you can add units after this };
 
 {$R *.res}
@@ -29,6 +29,7 @@ begin
   Application.CreateForm(TFrep, Frep);
   Application.CreateForm(TFcekbrg, Fcekbrg);
   Application.CreateForm(TFpending, Fpending);
+  Application.CreateForm(TFaudit, Faudit);
   //Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

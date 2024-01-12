@@ -18,7 +18,9 @@ type
     d4: TDataSource;
     d5: TDataSource;
     d6: TDataSource;
+    d7: TDataSource;
     dtcaribrg: TZQuery;
+    audit: TZQuery;
     sumjual: TZQuery;
     dtrtemp: TDataSource;
     dbconn: TZConnection;

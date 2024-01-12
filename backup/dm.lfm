@@ -1,8 +1,8 @@
 object dm1: Tdm1
   OldCreateOrder = False
   Height = 599
-  HorizontalOffset = 719
-  VerticalOffset = 163
+  HorizontalOffset = 907
+  VerticalOffset = 286
   Width = 732
   PPI = 144
   object dbconn: TZConnection
@@ -12,6 +12,7 @@ object dm1: Tdm1
       'AutoEncodeStrings=True'
       'controls_cp=CP_UTF8'
     )
+    Connected = True
     AfterConnect = dbconnAfterConnect
     HostName = '127.0.0.1'
     Port = 3306
@@ -73,7 +74,7 @@ object dm1: Tdm1
   object tb_tr_temp: TZQuery
     Connection = dbconn
     SQL.Strings = (
-      'SELECT A.rowid,A.trid,A.id_brg,B.nama_brg,A.harga_beli,A.harga_jual,A.qty,A.uom,A.crid,A.crdt,A.sts,(A.harga_jual * A.qty) as total '
+      'SELECT A.rowid,A.trid,A.id_brg,B.kd_brg,B.nama_brg,A.harga_beli,A.harga_jual,A.qty,A.uom,A.crid,A.crdt,A.sts,(A.harga_jual * A.qty) as total '
       'FROM tb_tr_temp A '
       'LEFT JOIN tb_brg B ON B.rowid = A.id_brg;'
     )
@@ -177,5 +178,20 @@ object dm1: Tdm1
     DataSet = pending
     Left = 488
     Top = 304
+  end
+  object audit: TZQuery
+    Connection = dbconn
+    Active = True
+    SQL.Strings = (
+      'CALL audit_brg(58);'
+    )
+    Params = <>
+    Left = 395
+    Top = 400
+  end
+  object d7: TDataSource
+    DataSet = audit
+    Left = 491
+    Top = 400
   end
 end

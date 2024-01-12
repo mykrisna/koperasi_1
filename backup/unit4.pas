@@ -21,6 +21,7 @@ type
     harga_jual: TEdit;
     Label6: TLabel;
     MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
     rowid: TEdit;
     harga_beli: TEdit;
     Label1: TLabel;
@@ -47,6 +48,7 @@ type
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
   private
 
   public
@@ -59,7 +61,7 @@ var
 implementation
 
 uses
-  dm,unit5;
+  dm,unit5,unit8;
 
   {$R *.lfm}
 
@@ -204,11 +206,7 @@ begin
         with dm1.dtbrg do begin
           close;
           sql.Clear;
-          sql.Add('SELECT A.rowid,A.kd_brg,A.nama_brg,(ifnull(B.stock,0) - ifnull(jual,0)) AS stock,A.uom,A.sts,A.harga_beli,A.harga_jual,(A.harga_jual - A.harga_beli) AS defiasi '+
-                  'FROM tb_brg A '+
-                  'LEFT JOIN (SELECT id_brg,SUM(qty) AS stock FROM tb_stock GROUP BY id_brg)B ON B.id_brg = A.rowid '+
-                  'LEFT JOIN (SELECT id_brg,sum(qty) AS jual FROM tb_tr WHERE sts = 1 GROUP BY id_brg)C ON C.id_brg = A.rowid '+
-                  'WHERE A.kd_brg LIKE '+quotedstr('%'+cari.Text+'%')+' OR A.nama_brg LIKE '+quotedstr('%'+cari.Text+'%')+' ORDER BY A.nama_brg;');
+          sql.Add('CALL brg('+quotedstr('%'+cari.Text+'%')+');');
           open;
         end;
       except on e:exception do begin
@@ -272,6 +270,17 @@ procedure TFbrg.MenuItem3Click(Sender: TObject);
 begin
   Finputstock.Label1.Caption := dm1.dtbrg.FieldByName('nama_brg').AsString;
   Finputstock.ShowModal;
+end;
+
+procedure TFbrg.MenuItem4Click(Sender: TObject);
+begin
+  with dm1.audit do begin
+    close;
+    sql.Clear;
+    sql.Add('CALL audit_brg('+dm1.dtbrg.FieldByName('id_brg').AsString+');');
+    open;
+  end;
+  Faudit.ShowModal;
 end;
 
 end.
